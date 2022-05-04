@@ -34,7 +34,4 @@ const middle = (array) => {
     result.push(array[array.length / 2]);
   }
   return result;
-
-}
-
-console.log(middle([1,2,3]));
+};
