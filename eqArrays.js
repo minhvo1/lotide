@@ -11,8 +11,6 @@ const eqArrays = (arrayOne, arrayTwo) => {
     } else if (arrayOne[i] !== arrayTwo[i]) {
       return false;
     } 
-
-    
   }
   return true;
 }
