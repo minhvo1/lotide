@@ -43,26 +43,26 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-eqObjects(ab, ba); // => true
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// eqObjects(ab, ba); // => true
 
-const abc = { a: "1", b: "2", c: "3" };
-eqObjects(ab, abc); // => false
+// const abc = { a: "1", b: "2", c: "3" };
+// eqObjects(ab, abc); // => false
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-eqObjects(cd, dc); // => true
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// eqObjects(cd, dc); // => true
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-eqObjects(cd, cd2); // => false
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// eqObjects(cd, cd2); // => false
 
-console.log(assertEqual(eqObjects(ab, ba),true));
-console.log(assertEqual(eqObjects(ab, abc),false));
-console.log(assertEqual(eqObjects(cd, dc),true));
-console.log(assertEqual(eqObjects(cd, cd2),false));
+// console.log(assertEqual(eqObjects(ab, ba),true));
+// console.log(assertEqual(eqObjects(ab, abc),false));
+// console.log(assertEqual(eqObjects(cd, dc),true));
+// console.log(assertEqual(eqObjects(cd, cd2),false));
 
-console.log(assertEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true)); // => true
+// console.log(assertEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true)); // => true
 
-console.log(assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), false)) // => false
-console.log(assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }), false)) // => false
+// console.log(assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), false)) // => false
+// console.log(assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }), false)) // => false
