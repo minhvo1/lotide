@@ -10,14 +10,10 @@ const eqArrays = (arrayOne, arrayTwo) => {
       eqArrays(arrayOne[i], arrayTwo[i]);
     } else if (arrayOne[i] !== arrayTwo[i]) {
       return false;
-    }
+    } 
+
+    
   }
   return true;
 }
-
 module.exports = eqArrays;
-
-// console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]),true)) // => true
-
-// console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]),false)) // => false
-// console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false)) // => false
